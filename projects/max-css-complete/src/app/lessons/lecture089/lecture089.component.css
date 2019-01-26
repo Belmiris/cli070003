@@ -1,0 +1,25 @@
+.parent {
+    background: white;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    top: 600px;
+}
+  
+.parent div {
+    background: rgb(105, 105, 109);
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+/*
+.parent .child-1 {
+    position: relative;
+    right: 50px;
+    top: 180px;
+}
+*/

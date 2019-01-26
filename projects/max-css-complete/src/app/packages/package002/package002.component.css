@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.plan {
+    border: 4px solid #11391A;
+    margin: 32px;
+    padding: 32px;
+}
+
+.plan > a {
+    text-decoration: none;
+}
+
+.plan h2 {
+    color: #858585;
+}
+
+.plan p {
+    background: white;
+    border: 2px solid #1A4729;
+    color: #1A4729;
+    padding: 32px;
+}
+
+.plan-plus {
+    background: #CFF7D8;
+}
+
+.plan-plus__title {
+    color: black;
+}
+
+.plan-free {
+    background: #CFF7D8;
+}
+
+.plan-free__title {
+    color: black;
+}
+
+.plan-premium {
+    background: #1A4729;
+    color: white;
+}
+
+.plan-premium__title {
+    color: white;
+}

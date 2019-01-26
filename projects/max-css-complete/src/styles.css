@@ -1,0 +1,190 @@
+/* You can add global styles to this file, and also import other style files */
+/*  This has to go into the styles.css file to affect the body. */
+
+/* Main project */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+code {
+    background: #ccc;
+    color: red;
+    font-size: 16px;
+}
+
+.info {
+    background: white;
+    border-style: double;
+    border-width: 5px;
+    padding: 5px;
+}
+
+.router-link-active {
+    color: purple;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.main-header {
+    background: #2ddf5c;
+    left: 0;
+    padding: 8px 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
+
+.main-footer {
+    background: black;
+    margin-top: 48px;
+    padding: 32px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link a:active,
+.main-footer__link a:hover {
+    color: #ccc;
+}
+
+/* Working with position - Lecture 82 */
+/*
+html {
+    background: #b3b3b3;
+    padding: 15px;
+    border: 5px solid white;
+    margin: 15px;
+    height: 2000px;
+}
+
+body {
+    background: #fa923f;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0;
+}
+*/
+
+/* Diving deeper into relative positionaing - Lecture 88 */
+/*
+html {
+    background: #b3b3b3;
+    padding: 15px;
+    border: 5px solid white;
+    margin: 15px;
+    height: 2000px;
+    overflow: hidden;
+}
+
+body {
+    background: #fa923f;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0;
+    overflow: hidden;
+}
+*/
+
+/* Introducing Sticky Positioning - Lecture 90 */
+/*
+html {
+    height: 2000px;
+}
+
+body {
+    margin: 0;
+}
+*/
+
+/* Lecture 91 */
+html {
+    background: #b3b3b3;
+    padding: 15px;
+    border: 5px solid white;
+    margin: 15px;
+    height: 2000px;
+}
+
+body {
+    background: white;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0;
+    height: 400px;
+}

@@ -1,0 +1,17 @@
+<div class="parent">
+  <div class="child-1">Navigation Bar</div>
+  <div class="child-2">Background Image</div>
+  <div class="child-3">Features</div>
+</div>
+
+<div class="info">
+  <p>Working with Overflow and Relative Positioning</p>
+  <p>A way to handle child elements with <code>postion: relative;</code> is to hide the parts that pass the parents boundaries</p>
+  <p>Set the parent element's property to <code>overflow: hidden;</code> to hide children that pass the boundaries.</p>
+  <h3>WARNING</h3>
+  <p>If you set the position to relative of a top level element and then try to set the body element property <code>overflow: hidden;</code> it will have no effect!</p>
+  <p>This is due to a default behavior of browsers when the overflow property on the body will be transfered to the html element.</p>
+  <p>By definition, nothing can 'overflow' the html boundary.</p>
+  <h3>WARNING 2</h3>
+  <p>Stupidly, if you set the overflow property of the html element AND the body element to hidden it will work as 'expected'. </p>
+</div>

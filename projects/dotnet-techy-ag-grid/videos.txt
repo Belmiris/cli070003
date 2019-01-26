@@ -1,0 +1,8 @@
+Part 0 - Get Started with ag-Grid in Your Angular Project
+https://www.ag-grid.com/angular-getting-started/
+
+Part 1 - How to use ag grid in angular 6
+https://www.youtube.com/watch?v=D1xF-wnOdqQ
+
+Part 2 - All about ag-grid in angular 6
+https://www.youtube.com/watch?v=zoO0sDkDhYg&t=3s

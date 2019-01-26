@@ -1,0 +1,22 @@
+#product-overview {
+    background: #ff1b68;
+    border: 5px black solid;
+    /*border-width: 5px;
+    border-color: black;
+    border-style: solid; */
+    padding: 20px;
+    margin: 20px;
+}
+
+.section-title {
+    color: #2ddf5c;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+/* h1 {
+    font-family: sans-serif;
+} */

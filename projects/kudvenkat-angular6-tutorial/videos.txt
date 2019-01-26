@@ -1,0 +1,178 @@
+Part 1
+https://www.youtube.com/watch?v=Sm353aYNZxU&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=1
+
+Part 2
+https://www.youtube.com/watch?v=Sm353aYNZxU&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=2
+
+Part 3 - Angular 6 routing tutorial
+https://www.youtube.com/watch?v=Sm353aYNZxU&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=3
+ng g c employee/create-employee --spec=false --flat=true --project=kudvenkat-angular6-tutorial
+ng g c employee/list-employees --spec=false --flat=true --project=kudvenkat-angular6-tutorial
+ng g m app-routing --module=app --flat=true --project=kudvenkat-angular6-tutorial
+
+Part 4 - Angular reactive forms
+https://www.youtube.com/watch?v=VLYc3ACWL-E&index=4&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+import ReactiveFormsModule in app.module.ts
+
+Part 5 - Angular form control and form group
+https://www.youtube.com/watch?v=TOyXHqL3MoM&index=6&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+Accessing FormControls in a FormGroup -> employeeForm.controls.fullName.value;
+                                      -> employeeForm.get('fullName').value;
+
+Part 6 - Angular nested form groups
+https://www.youtube.com/watch?v=XKwct01QdoI&index=6&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 7 - Angular setvalue and patchvalue methods
+https://www.youtube.com/watch?v=BRdhAPozNlI&index=7&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+Bootstrap button toolbar
+Use setValue for error catching.
+
+Part 8 - Angular formbuilder example
+https://www.youtube.com/watch?v=AiNfK36Xn1s&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=8
+Must import FormBuilder from @angular/forms
+
+Part 9 - Angular reactive forms validation
+https://www.youtube.com/watch?v=MPuXl1DS1vU&index=9&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+Import Validators class from @angulars/forms
+Validators functions:
+required, requiredTrue, email, pattern, min, max, minLength, maxLength.
+Assigning multiple validators.
+
+Part 10 - Angular form control valuechanges
+https://www.youtube.com/watch?v=qaVHCnqMASw&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=10
+Subscribing to the valueChanges Observable class on AbstractControl objects.
+
+Part 11 - Loop through all form controls in formgroup in reactive form
+https://www.youtube.com/watch?v=nXV9Fz1rTeM&index=11&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 12 - Move validation messages to the component class in reactive form
+https://www.youtube.com/watch?v=AvqP3FblMA8&index=12&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 13 - Move validation logic to the component class in reactive form
+https://www.youtube.com/watch?v=2V50gFV-BEE&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=13
+
+Part 14 - Dynamically adding or removing form control validators in reactive form
+https://www.youtube.com/watch?v=BP6E4rW5EPA&index=14&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 15 - Angular reactive form custom validator
+https://www.youtube.com/watch?v=pa9S8_3Rs8A&index=15&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 16 - Angular reactive form custom validator with parameter
+https://www.youtube.com/watch?v=2PfMVL0OIGg&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=16
+
+Part 17 - How to make angular custom validator reusable
+https://www.youtube.com/watch?v=MWJ3s3uls4c&index=17&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 18 - Angular reactive forms cross field validation
+https://www.youtube.com/watch?v=m6imvYpP_Js&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=18
+
+Part 19 - Angular formarray example
+https://www.youtube.com/watch?v=eHBOQsqTDXw&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=19
+You can create form arrays with the new operator or using the FormBuilder.array.
+Array properties; touched, untouched, valid, invalid, dirty, pristine.
+Useful FormArray methods; push, insert, removeAt, setControl, at.
+The FormArray and FormGroup are very similar. The FormArray is serialized as an array,
+the FormGroup is serialized as an Object.
+FormArrays are well suited to dynamically creating controls based on user input.
+
+Part 20 - Creating formarray of formgroup objects in Angular
+https://www.youtube.com/watch?v=qNsFvwlzhDs&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=20
+
+Part 21 - Angular dynamic forms tutorial
+https://www.youtube.com/watch?v=n3aQl0DCvds&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=21
+
+Part 22 - Generate unique id value for dynamically created form controls in angular
+https://www.youtube.com/watch?v=aUD-hoFTnLI&index=22&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 23 - Angular dynamic forms validation
+https://www.youtube.com/watch?v=lBi8cLsdNFA&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=23
+
+Part 24 - Angular formarray validation
+https://www.youtube.com/watch?v=4YNAU9egQkc&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=24
+
+Part 25 - Remove dynamically created form controls in angular
+https://www.youtube.com/watch?v=ioV1OBSQD88&index=25&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 26 - RxJS operators in angular services
+https://www.youtube.com/watch?v=Cuyf1k4bIzc&index=26&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 27 - Angular reactive forms edit example
+https://www.youtube.com/watch?v=aKTLabJ39Rk&index=27&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 28 - Angular populate formarray
+https://www.youtube.com/watch?v=LBZqxSJSyDk&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=28
+
+Part 29 - Angular reactive forms put example
+https://www.youtube.com/watch?v=FakCQJA2nOg&index=29&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 30 - Angular reactive forms post example
+https://www.youtube.com/watch?v=H344QgNPoLo&index=30&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+
+Part 31 - Angular modules explained
+https://www.youtube.com/watch?v=I0i8kNdIsvE&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=31
+
+Part 32 - Creating feature module in angular
+https://www.youtube.com/watch?v=5_DiALgzvCw&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=32
+
+Part 33 - Creating feature routing module in angular
+https://www.youtube.com/watch?v=puscOjMyouc&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj&index=33
+RouterModule.forRoot(appRoutes)  -> Creates a new Router service. 
+                                    Call this only once in application.
+RouterModule.forChild(appRoutes) -> Only registers new routes with current service.
+                                    Use this in child router modules.
+The order you import the routing modules in is vital to navigation due to the wildcard for
+'page not found'.
+Always import child routing modules first.
+
+Part 34 - Creating shared module in angular
+https://www.youtube.com/watch?v=HFRAL5Msa_o&index=34&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+Shared modules can re-export @angular modules, so you don't have to import them again.
+Shared modules should NEVER have providers (like services) because they are singletons.
+Shared modules should NEVER re=export modules that have providers.
+Shared modules are imported into all feature modules.
+
+Part 35 - Grouping routes and creating component less route in angular
+https://www.youtube.com/watch?v=BkLqyr4VHmw&index=35&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+Component less routes are required for lazy loading of routes.
+All routes in a lazy loaded route module must have the same prefix.
+We had to change all the links to our employee routes to start with 'employees' after this change.
+
+Part 36 - Lazy loading in angular
+https://www.youtube.com/watch?v=75XFBIKLPQY&index=36&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+Two requirement to lazy load an angular module:
+  1. All routes in the module must have the same route prefix.
+  2. The module must not be referenced in any other module.
+Use the loadChildren property for Lazy Loading.
+  { path: 'employees', loadChildren: './employee/employee.module#EmployeeModule' }
+Note the weird hash delimited syntax for the path / module.
+
+Part 37 - Preloading angular modules
+https://www.youtube.com/watch?v=ceMsvxyuc6Q&index=37&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+Module Load Strategies in Angular
+  1. Eager Loading  - All modules downloaded when app starts (default).
+                    - AppModule is always eagerly loaded.
+  2. Lazy Loading   - Loaded on demand, when the user navigates to routes for the module.
+                    - Module must not be referenced in any other module.
+                    - The downside of lazy loading is that the user must wait for the 
+                      module to load the first time they navigate to a route.
+  3. Preloading     - Lazy loaded modules are silently downloaded in the background
+                      after the initial Eagerly Loaded mdules have been downloaded and
+                      the user is interacting with the app.
+                      Also called Eager Lazy Loading.
+  // app-routing.module.ts
+  { import RouterModule, Routes, PreloadAllModules } from '@angular/core';
+
+  ...
+  @NgModule({
+      imports: [
+          RouterModule.forRoot(appRoutes, { preLoadingStrategy: PreloadAllModules })
+      ],
+      exports: [ RouterModule ]
+  })
+  export class AppRoutingModule { }
+
+Part 38 -
+https://www.youtube.com/watch?v=oiqrYF0cWCw&index=38&list=PL6n9fhu94yhWNJaDgh0mfae_9xoQ4E_Zj
+1. Sometimes we may not want to preload all our modules, maybe some are large and rarely used.
+2. We can use Custom Preloading to accomplish this.
+3. Custom preloading uses a service.

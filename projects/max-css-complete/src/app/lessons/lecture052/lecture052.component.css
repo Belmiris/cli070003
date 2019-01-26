@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+.half-width {
+    display: inline-block;
+    width: 50%;
+}
