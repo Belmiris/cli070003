@@ -518,6 +518,133 @@
           }
         }
       }
+    },
+    "max-ng-refresher": {
+      "root": "projects/max-ng-refresher/",
+      "sourceRoot": "projects/max-ng-refresher/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/max-ng-refresher",
+            "index": "projects/max-ng-refresher/src/index.html",
+            "main": "projects/max-ng-refresher/src/main.ts",
+            "polyfills": "projects/max-ng-refresher/src/polyfills.ts",
+            "tsConfig": "projects/max-ng-refresher/tsconfig.app.json",
+            "assets": [
+              "projects/max-ng-refresher/src/favicon.ico",
+              "projects/max-ng-refresher/src/assets"
+            ],
+            "styles": [
+              "projects/max-ng-refresher/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/max-ng-refresher/src/environments/environment.ts",
+                  "with": "projects/max-ng-refresher/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "max-ng-refresher:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "max-ng-refresher:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "max-ng-refresher:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/max-ng-refresher/src/test.ts",
+            "polyfills": "projects/max-ng-refresher/src/polyfills.ts",
+            "tsConfig": "projects/max-ng-refresher/tsconfig.spec.json",
+            "karmaConfig": "projects/max-ng-refresher/karma.conf.js",
+            "styles": [
+              "projects/max-ng-refresher/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/max-ng-refresher/src/favicon.ico",
+              "projects/max-ng-refresher/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/max-ng-refresher/tsconfig.app.json",
+              "projects/max-ng-refresher/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "max-ng-refresher-e2e": {
+      "root": "projects/max-ng-refresher-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/max-ng-refresher-e2e/protractor.conf.js",
+            "devServerTarget": "max-ng-refresher:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "max-ng-refresher:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/max-ng-refresher-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "cli070003"
