@@ -98,6 +98,12 @@ import { Lecture088Component } from './lessons/lecture088/lecture088.component';
 import { Lecture089Component } from './lessons/lecture089/lecture089.component';
 import { Lecture090Component } from './lessons/lecture090/lecture090.component';
 import { Lecture091Component } from './lessons/lecture091/lecture091.component';
+import { Assignment003Component } from './assignments/assignment003/assignment003.component';
+import { PackageComponent } from './assignments/assignment003/package/package.component';
+import { Lecture092Component } from './lessons/lecture092/lecture092.component';
+import { Package092Component } from './lessons/lecture092/package092/package092.component';
+import { Lecture095Component } from './lessons/lecture095/lecture095.component';
+import { Package095Component } from './lessons/lecture095/package095/package095.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -186,10 +192,11 @@ const appRoutes: Routes = [
   { path: 'lesson089', component: Lecture089Component },
   { path: 'lesson090', component: Lecture090Component },
   { path: 'lesson091', component: Lecture091Component },
-  { path: 'lesson092', component: NotDoneYetComponent },
+  { path: 'assignment3', component: Assignment003Component },
+  { path: 'lesson092', component: Lecture092Component },
   { path: 'lesson093', component: NotDoneYetComponent },
   { path: 'lesson094', component: NotDoneYetComponent },
-  { path: 'lesson095', component: NotDoneYetComponent },
+  { path: 'lesson095', component: Lecture095Component },
   { path: 'lesson096', component: NotDoneYetComponent },
   { path: 'lesson097', component: NotDoneYetComponent },
   { path: 'lesson098', component: NotDoneYetComponent },
@@ -217,10 +224,10 @@ const appRoutes: Routes = [
   { path: 'package089', component: NotDoneYetComponent },
   { path: 'package090', component: NotDoneYetComponent },
   { path: 'package091', component: NotDoneYetComponent },
-  { path: 'package092', component: NotDoneYetComponent },
+  { path: 'package-ass1', component: PackageComponent },
   { path: 'package093', component: NotDoneYetComponent },
   { path: 'package094', component: NotDoneYetComponent },
-  { path: 'package095', component: NotDoneYetComponent },
+  { path: 'package095', component: Package095Component },
   { path: 'package096', component: NotDoneYetComponent },
   { path: 'package097', component: NotDoneYetComponent },
   { path: 'package098', component: NotDoneYetComponent },
@@ -327,7 +334,13 @@ const appRoutes: Routes = [
     Lecture088Component,
     Lecture089Component,
     Lecture090Component,
-    Lecture091Component
+    Lecture091Component,
+    Assignment003Component,
+    PackageComponent,
+    Lecture092Component,
+    Package092Component,
+    Lecture095Component,
+    Package095Component,
   ],
   imports: [
     BrowserModule,

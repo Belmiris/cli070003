@@ -1,0 +1,6 @@
+.background {
+  background: url("../../../assets/summary-positioning.jpg");
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
