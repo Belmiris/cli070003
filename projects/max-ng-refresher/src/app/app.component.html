@@ -1,4 +1,10 @@
+<!-- <a href="/">Person List</a> | <a href="/input">Input</a> -->
+<a [routerLink]="['/']" routerLinkActive="router-link-active">Person List</a> |
+<a [routerLink]="['/input']" routerLinkActive="router-link-active">Input</a>
+<hr>
+
 <router-outlet></router-outlet>
+
 <!--
 <app-persons-input (personCreate)="onPersonCreated($event)"></app-persons-input>
 <app-persons [personList]="persons"></app-persons>
