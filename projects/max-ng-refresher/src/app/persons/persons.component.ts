@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 import { PersonsService } from './persons.service';
 
@@ -6,18 +7,25 @@ import { PersonsService } from './persons.service';
   selector: 'app-persons',
   templateUrl: './persons.component.html'
 })
-export class PersonsComponent implements OnInit {
+export class PersonsComponent implements OnInit, OnDestroy {
   personList: string[];
+  private rx1: Subscription;
 
   constructor(private personsSvc: PersonsService) {
   }
 
   ngOnInit() {
     this.personList = this.personsSvc.persons;
+    this.rx1 = this.personsSvc.personsChanged.subscribe(persons => {
+      this.personList = persons;
+    } );
+  }
+
+  ngOnDestroy() {
+    this.rx1.unsubscribe();
   }
 
   onPersonClick(name: string) {
     this.personsSvc.removePerson(name);
-    this.personList = this.personsSvc.persons;
   }
 }
