@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'max-ng-refresher';
-  persons: string[] = ['Max', 'Manuel', 'Anna'];
-
-  onPersonCreated(name: string) {
-    console.log('adding person ' + name);
-    this.persons.push(name);
-  }
 }

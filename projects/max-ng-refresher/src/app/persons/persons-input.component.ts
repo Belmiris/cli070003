@@ -1,17 +1,25 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { PersonsService } from './persons.service';
 
 @Component({
   selector: 'app-persons-input',
   templateUrl: './persons-input.component.html',
   styleUrls: ['./persons-input.component.css']
 })
-export class PersonsInputComponent {
-  @Output() personCreate = new EventEmitter<string>();
+export class PersonsInputComponent implements OnInit {
   enteredPersonName: string;
+
+  constructor(private personsSvc: PersonsService) {
+  }
+
+  ngOnInit() {
+
+  }
 
   onCreatePerson() {
     console.log('create person ' + this.enteredPersonName);
-    this.personCreate.emit(this.enteredPersonName);
+    this.personsSvc.addPerson(this.enteredPersonName);
     this.enteredPersonName = '';
   }
 }
