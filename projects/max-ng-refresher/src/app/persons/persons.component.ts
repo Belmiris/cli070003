@@ -8,6 +8,7 @@ import { PersonsService } from './persons.service';
   templateUrl: './persons.component.html'
 })
 export class PersonsComponent implements OnInit, OnDestroy {
+  isFetching: boolean;
   personList: string[];
   private rx1: Subscription;
 
@@ -17,7 +18,9 @@ export class PersonsComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.rx1 = this.personsSvc.personsChanged.subscribe(persons => {
       this.personList = persons;
+      this.isFetching = false;
     });
+    this.isFetching = true;
     this.personsSvc.fetchPersons();
   }
 

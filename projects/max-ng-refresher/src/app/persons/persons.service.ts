@@ -1,14 +1,14 @@
-import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonsService {
   personsChanged = new Subject<string[]>();
-  persons: string[];
+  persons: string[] = [];
 
   constructor(private http: HttpClient) {
   }
@@ -17,8 +17,9 @@ export class PersonsService {
     this.http
       .get<any>('https://swapi.co/api/people')
       .pipe(map(resData => {
-        return resData.results.map(character => character.name);
-      }))
+          return resData.results.map(character => character.name);
+        })
+      )
       .subscribe(transformedData => {
         this.personsChanged.next(transformedData);
     });

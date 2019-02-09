@@ -1,4 +1,4 @@
-<p>Some persons</p>
-<ul>
+<p *ngIf="isFetching">Fetching data...</p>
+<ul *ngIf="!isFetching">
   <li *ngFor="let person of personList" (click)="onPersonClick(person)">{{person}}</li>
 </ul>
